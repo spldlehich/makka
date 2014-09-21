@@ -1,0 +1,15 @@
+<configuration>
+
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>/tmp/logFac.log</file>
+
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <Pattern>%date %level %msg%n</Pattern>
+    </layout>
+  </appender>
+
+  <root>
+    <level value="debug" />
+    <appender-ref ref="FILE" />
+  </root>
+</configuration>
